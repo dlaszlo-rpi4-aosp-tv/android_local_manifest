@@ -17,10 +17,6 @@
   <project path="external/alsa-lib" name="raspberry-vanilla/android_external_alsa-lib" remote="github" revision="android-15.0" />
   <project path="external/alsa-utils" name="raspberry-vanilla/android_external_alsa-utils" remote="github" revision="android-15.0" />
 
-  <!-- Bluetooth -->
-  <remove-project name="platform/packages/modules/Bluetooth" />
-  <project path="packages/modules/Bluetooth" name="raspberry-vanilla/android_packages_modules_Bluetooth" remote="github" revision="android-15.0" />
-
   <!-- Build -->
   <remove-project name="platform/build" />
   <remove-project name="platform/build/soong" />
