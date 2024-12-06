@@ -16,14 +16,14 @@ sudo pip3 install meson mako jinja2 ply pyyaml dataclasses
 3. Initialize repo:
 
 ```
-repo init -u https://android.googlesource.com/platform/manifest -b android-15.0.0_r4
+repo init -u https://android.googlesource.com/platform/manifest -b android-15.0.0_r6
 curl -o .repo/local_manifests/manifest_brcm_rpi.xml -L https://raw.githubusercontent.com/raspberry-vanilla/android_local_manifest/android-15.0/manifest_brcm_rpi.xml --create-dirs
 ```
 
 Or optionally, you can reduce download size by creating a shallow clone and removing unneeded projects:
 
 ```
-repo init -u https://android.googlesource.com/platform/manifest -b android-15.0.0_r4 --depth=1
+repo init -u https://android.googlesource.com/platform/manifest -b android-15.0.0_r6 --depth=1
 curl -o .repo/local_manifests/manifest_brcm_rpi.xml -L https://raw.githubusercontent.com/raspberry-vanilla/android_local_manifest/android-15.0/manifest_brcm_rpi.xml --create-dirs
 curl -o .repo/local_manifests/remove_projects.xml -L https://raw.githubusercontent.com/raspberry-vanilla/android_local_manifest/android-15.0/remove_projects.xml
 ```
@@ -43,22 +43,22 @@ repo sync
 6. Select the device (`rpi4` or `rpi5`) and build target (tablet UI, `tv` for Android TV, or `car` for Android Automotive):
 
 ```
-lunch aosp_rpi4-ap3a-userdebug
+lunch aosp_rpi4-ap4a-userdebug
 ```
 ```
-lunch aosp_rpi4_tv-ap3a-userdebug
+lunch aosp_rpi4_tv-ap4a-userdebug
 ```
 ```
-lunch aosp_rpi4_car-ap3a-userdebug
+lunch aosp_rpi4_car-ap4a-userdebug
 ```
 ```
-lunch aosp_rpi5-ap3a-userdebug
+lunch aosp_rpi5-ap4a-userdebug
 ```
 ```
-lunch aosp_rpi5_tv-ap3a-userdebug
+lunch aosp_rpi5_tv-ap4a-userdebug
 ```
 ```
-lunch aosp_rpi5_car-ap3a-userdebug
+lunch aosp_rpi5_car-ap4a-userdebug
 ```
 
 7. Compile:
